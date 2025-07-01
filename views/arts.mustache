@@ -55,13 +55,21 @@
 .fancy-heading {
   font-size: 3rem;
   font-weight: 900;
-  background: linear-gradient(90deg, #ff416c, #ff4b2b, #f9d423, #4facfe, #00f2fe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: glow 2s ease-in-out infinite alternate;
+  color: #ff3366;
+  animation: colorChange 3s infinite linear;
   letter-spacing: 2px;
-
+  text-shadow: 0 0 5px rgba(255, 51, 102, 0.6),
+               0 0 10px rgba(255, 51, 102, 0.5);
 }
+
+@keyframes colorChange {
+  0%   { color: #ff3366; text-shadow: 0 0 5px #ff3366; }
+  25%  { color: #ff9900; text-shadow: 0 0 5px #ff9900; }
+  50%  { color: #33cc33; text-shadow: 0 0 5px #33cc33; }
+  75%  { color: #3399ff; text-shadow: 0 0 5px #3399ff; }
+  100% { color: #ff3366; text-shadow: 0 0 5px #ff3366; }
+}
+
 
 @keyframes glow {
   from {
