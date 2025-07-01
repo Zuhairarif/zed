@@ -33,7 +33,7 @@
     }
 
     .card-icon {
-      font-size: 50px;
+      font-size: 40px;
       color: #6c757d;
       margin-bottom: 10px;
     }
@@ -43,6 +43,7 @@
       color: #fff;
       padding: 20px 0;
       text-align: center;
+      font-size: 0.9rem;
     }
 
     .footer a {
@@ -63,13 +64,25 @@
     }
 
     .welcome h1 {
-      font-size: 2rem;
+      font-size: 1.8rem;
       color: #14981d;
     }
 
     .welcome p {
-      font-size: 1.1rem;
+      font-size: 1rem;
       color: #555;
+    }
+
+    .container h1 {
+      font-size: 1.8rem;
+    }
+
+    .category-card .card-title {
+      font-size: 1rem;
+    }
+
+    .category-card .card-text {
+      font-size: 0.9rem;
     }
 
     .navbar .menu-toggle {
@@ -97,6 +110,30 @@
 
       .navbar .menu-toggle {
         display: block;
+      }
+
+      .welcome h1 {
+        font-size: 1.2rem;
+      }
+
+      .welcome p {
+        font-size: 0.9rem;
+      }
+
+      .container h1 {
+        font-size: 1.3rem;
+      }
+
+      .card-icon {
+        font-size: 36px;
+      }
+
+      .category-card .card-title {
+        font-size: 0.95rem;
+      }
+
+      .category-card .card-text {
+        font-size: 0.85rem;
       }
     }
   </style>
@@ -130,19 +167,20 @@
   <div class="container my-5">
     <h1 class="text-center mb-4">Explore Categories</h1>
     <div class="row g-4">
-      <!-- Example Category Card -->
+      <!-- Category Cards (17 Total) -->
+      <!-- Category List -->
+      {{#each categories}}
       <div class="col-sm-6 col-md-4 col-lg-3">
         <div class="card category-card shadow">
           <div class="card-body text-center">
-            <i class="fas fa-comments card-icon"></i>
-            <h5 class="card-title">General Discussions</h5>
-            <p class="card-text">Talk about anything and everything that connects AMU students.</p>
-            <a href="/general" class="btn btn-primary">View Discussions</a>
+            <i class="fas {{icon}} card-icon"></i>
+            <h5 class="card-title">{{title}}</h5>
+            <p class="card-text">{{description}}</p>
+            <a href="/{{slug}}" class="btn btn-primary">View Discussions</a>
           </div>
         </div>
       </div>
-      <!-- Repeat similar .col-* for each faculty -->
-      <!-- [...] Remaining categories go here (same layout as above) -->
+      {{/each}}
     </div>
   </div>
 
