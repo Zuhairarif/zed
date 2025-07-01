@@ -52,6 +52,26 @@
       background-color: yellow;
       font-weight: bold;
     }
+.fancy-heading {
+  font-size: 3rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #ff416c, #ff4b2b, #f9d423, #4facfe, #00f2fe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glow 2s ease-in-out infinite alternate;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ff4b2b, 0 0 20px #ff416c, 0 0 30px #f9d423;
+  }
+  to {
+    text-shadow: 0 0 20px #00f2fe, 0 0 30px #4facfe, 0 0 40px #00f2fe;
+  }
+}
+
     .logo-image {
       position: absolute;
       top: 10px;
@@ -83,8 +103,9 @@
 
   <!-- Tagline -->
   <header class="bg-light py-3 text-center">
-    <h1 class="display-5">Faculty of Arts</h1>
-    <p class="lead">We promote freedom of speech and anonymous discussions</p>
+    <h1 class="display-5 fancy-heading">Faculty of Arts</h1>
+<p class="lead">We promote freedom of speech and anonymous discussions</p>
+
   </header>
 
   <div class="container thread-container">
