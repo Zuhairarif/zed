@@ -111,7 +111,8 @@
   <img src="logo/arts.jpg"  alt="Logo" class="logo-image">
 
   <!-- Tagline -->
-  <header class="bg-light py-3 text-center">
+ <header class="bg-light py-3 text-center" style="margin-bottom: 10px;">
+
     <h1 class="display-5 fancy-heading">Faculty of Arts</h1>
 <p class="lead" style="font-size: 0.8rem; font-weight: bold; ">We promote freedom of speech and anonymous discussions</p>
 
@@ -122,19 +123,22 @@
 
     <!-- Search Bar -->
     <div class="mb-4">
-      <h3>Search Discussions</h3>
+     <h3 style="font-size: 1.25rem;">Search Discussions</h3>
+
       <input type="text" id="search-bar" class="form-control" placeholder="Search threads or comments..." oninput="filterContent()">
     </div>
 
     <!-- Search Results -->
     <div class="mb-4" id="search-results" style="display: none;">
-      <h3>Search Results</h3>
+     <h3 style="font-size: 1.25rem;" id="search-results-heading">Search Results</h3>
+
       <div id="results-container"></div>
     </div>
 
     <!-- New Thread Section -->
     <div class="mb-4">
-      <h3>Start a New Discussion</h3>
+     <h3 style="font-size: 1.25rem;">Start a New Discussion</h3>
+
       <form action="/{{dept}}/love" method="POST">
         <div class="mb-3">
           <label for="thread-title" class="form-label">Question</label>
@@ -149,7 +153,8 @@
     </div>
 
     <!-- Recent Discussions -->
-    <h3>Recent Discussions</h3>
+   <h3 style="font-size: 1.25rem;">Recent Discussions</h3>
+
     {{#threads}}
     <div class="thread">
       <h5>{{title}}</h5>
