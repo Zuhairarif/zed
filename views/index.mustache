@@ -140,21 +140,7 @@ h1.text-center {
   .btn {
     font-size: 0.8rem;
   }
-}.navbar-nav-wrapper {
-  position: relative;
 }
-@media (max-width: 768px) {
-  .navbar-nav {
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 0;
-  }
-
-  .navbar-nav.active {
-    max-height: 500px; /* adjust based on content */
-  }
-}
-
 
   </style>
 </head>
@@ -166,9 +152,8 @@ h1.text-center {
         <img src="logo/logo.png" alt="ZED Logo" style="width: 50px; height: 50px;"> ZED
       </a>
       <div class="menu-toggle" onclick="document.querySelector('.navbar-nav').classList.toggle('active')">&#9776;</div>
-     <div class="navbar-nav-wrapper">
-  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="aim.html">Our Aim</a></li>
@@ -213,12 +198,5 @@ h1.text-center {
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-  document.querySelector('.menu-toggle').addEventListener('click', function () {
-    const nav = document.querySelector('.navbar-nav');
-    nav.classList.toggle('active');
-  });
-</script>
-
 </body>
 </html>
