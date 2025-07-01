@@ -139,6 +139,59 @@ h1.text-center {
     border: none;
     outline: none;
   }
+.zed-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  line-height: 1.3;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  animation: popIn 1s ease-out;
+}
+
+.zed-heading span {
+  color: #28a745;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.zed-heading .tagline {
+  display: block;
+  font-size: 1.2rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #6c757d;
+}
+
+.zed-subtitle {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+@keyframes popIn {
+  0% { opacity: 0; transform: scale(0.95); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive Tweak */
+@media (max-width: 768px) {
+  .zed-heading {
+    font-size: 1.5rem;
+  }
+
+  .zed-heading .tagline {
+    font-size: 1rem;
+  }
+
+  .zed-subtitle {
+    font-size: 0.95rem;
+  }
+}
 
  
 
@@ -174,10 +227,14 @@ h1.text-center {
 
 
   <!-- Welcome Section -->
-  <section class="welcome">
-    <h1>Welcome to ZedChat: The Anonymous Corner Where AMU Talks Freely</h1>
-    <p>AMU's own social media platform</p>
-  </section>
+ <section class="welcome">
+  <h1 class="zed-heading">
+    Welcome to <span>ZedChat</span><br>
+    <small class="tagline">The Anonymous Corner Where AMU Talks Freely</small>
+  </h1>
+  <p class="zed-subtitle">AMU's own social media platform</p>
+</section>
+
 
   <!-- Main Content -->
   <div class="container my-5">
