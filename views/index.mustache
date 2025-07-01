@@ -148,25 +148,28 @@ h1.text-center {
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo/logo.png" alt="ZED Logo" style="width: 50px; height: 50px;"> ZED
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="logo/logo.png" alt="ZED Logo" style="width: 50px; height: 50px;"> ZED
+    </a>
 
- <div class="collapse navbar-collapse" id="mainNavbar">
+    <!-- ✅ Bootstrap hamburger -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="aim.html">Our Aim</a></li>
-          <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-        </ul>
-      </div>
+    <!-- ✅ Add id here -->
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="aim.html">Our Aim</a></li>
+        <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+
 
   <!-- Welcome Section -->
   <section class="welcome">
