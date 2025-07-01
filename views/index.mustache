@@ -52,6 +52,17 @@
     .footer a:hover {
       color: #fff;
     }
+.navbar-toggler-icon {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
     .welcome {
       text-align: center;
@@ -79,26 +90,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .navbar-nav {
-    display: none;
-    flex-direction: column;
-    background-color: #343a40;
-    width: 100%;
-    position: absolute;
-    top: 56px;
-    left: 0;
-    padding: 10px 0;
-  }
 
-  .navbar-nav.active {
-    display: flex;
-  }
-
-  .navbar .menu-toggle {
-    display: block;
-  }
-}
 
 
 /* Default (Desktop View) */
@@ -148,9 +140,7 @@ h1.text-center {
     outline: none;
   }
 
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.7%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
+ 
 
 
 
@@ -178,22 +168,9 @@ h1.text-center {
 </nav>
 
 
-    <!-- ✅ Bootstrap hamburger -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    
 
-    <!-- ✅ Add id here -->
-    <div class="collapse navbar-collapse" id="mainNavbar">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-        <li class="nav-item"><a class="nav-link" href="aim.html">Our Aim</a></li>
-        <li class="nav-item"><a class="nav-link" href="privacy.html">Privacy Policy</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    
 
 
   <!-- Welcome Section -->
