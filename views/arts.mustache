@@ -179,12 +179,13 @@ body {
 
       <form action="/{{dept}}/love" method="POST">
         <div class="mb-3">
-          <label for="thread-title" class="form-label">Question</label>
-          <input type="text" class="form-control" name="title" placeholder="Ask your question" required />
+          <label for="thread-title" class="form-label">What's on your mind?</label>
+          <input type="text" class="form-control" name="title" placeholder="Start typing... don't overthink it" required />
         </div>
         <div class="mb-3">
-          <label for="thread-content" class="form-label">Details</label>
-          <textarea class="form-control" name="content" rows="3" placeholder="Provide some details about your question" required></textarea>
+          <label for="thread-content" class="form-label">Wanna add more?</label>
+    <textarea class="form-control" name="content" rows="3" placeholder=" Add context, rants, or whatever you want "></textarea>
+
         </div>
         <button type="submit" class="btn btn-primary">
   <i class="fas fa-paper-plane me-1"></i> Post
